@@ -1,0 +1,219 @@
+/* ===== IMPOR FONT ===== */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* ===== GLOBAL ===== */
+html,
+body,
+.stApp {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f9f4;
+  color: #1e293b;
+}
+
+/* ===== KONTEN UTAMA ===== */
+.main-container {
+  background: white;
+  border-radius: 24px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  margin: 1rem 0;
+}
+
+/* ===== HEADER & JUDUL ===== */
+h1 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  text-align: center;
+  color: #1b5e20;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #2e7d32;
+  font-weight: 500;
+  margin-top: -0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2,
+h3,
+h4 {
+  color: #1b3a2a;
+  font-weight: 500;
+}
+
+/* ===== FILE UPLOADER ===== */
+[data-testid="stFileUploader"] {
+  background: #fafffa;
+  padding: 2.5rem 1.5rem;
+  border-radius: 20px;
+  border: 2px dashed #2e7d32;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+  border-color: #1b5e20;
+  background-color: #f0f8f0;
+  box-shadow: 0 6px 18px rgba(46, 125, 50, 0.08);
+}
+
+[data-testid="stFileUploader"] label {
+  font-weight: 600;
+  color: #1b5e20;
+}
+
+/* ===== TOMBOL ===== */
+.stButton > button {
+  background: linear-gradient(145deg, #2e7d32, #1b5e20);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 2.4rem;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(27, 94, 32, 0.25);
+}
+
+.stButton > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(27, 94, 32, 0.35);
+  background: linear-gradient(145deg, #1b5e20, #0d3d0d);
+}
+
+.stButton > button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(27, 94, 32, 0.2);
+}
+
+/* ===== DATAFRAME / TABEL ===== */
+[data-testid="stDataFrame"] {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+[data-testid="stDataFrame"] thead tr th {
+  background-color: #e2f0e2 !important;
+  color: #1b3a2a !important;
+  font-weight: 600;
+  padding: 12px 16px !important;
+}
+
+[data-testid="stDataFrame"] tbody tr:hover {
+  background-color: #f0f8f0 !important;
+}
+
+/* ===== METRIC ===== */
+[data-testid="stMetric"] {
+  background: white;
+  padding: 1.4rem 1.2rem;
+  border-radius: 18px;
+  border-left: 8px solid #2e7d32;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s;
+}
+
+[data-testid="stMetric"]:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+}
+
+[data-testid="stMetric"] label {
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+[data-testid="stMetric"] .stMetricValue {
+  font-weight: 700;
+  color: #1b5e20;
+  font-size: 2rem;
+}
+
+/* ===== SELECTBOX ===== */
+.stSelectbox label {
+  font-weight: 600;
+  color: #1b3a2a;
+}
+
+.stSelectbox > div {
+  border-radius: 12px;
+  border: 1px solid #c8e6c9;
+  transition: all 0.2s;
+}
+
+.stSelectbox > div:focus-within {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.15);
+}
+
+/* ===== PROGRESS BAR ===== */
+.stProgress > div {
+  background-color: #e8f0e8;
+  border-radius: 30px;
+  height: 14px;
+}
+
+.stProgress > div > div {
+  background: linear-gradient(90deg, #4caf50, #1b5e20);
+  border-radius: 30px;
+}
+
+/* ===== ALERT SUCCESS ===== */
+.stAlert {
+  border-radius: 14px;
+  border-left-width: 8px;
+  font-weight: 400;
+}
+
+/* ===== DIVIDER ===== */
+hr {
+  border: none;
+  border-top: 2px solid #dcedc8;
+  margin: 2rem 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  border-top: 1px solid #dcedc8;
+  padding-top: 1.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .main-container {
+    padding: 1.5rem;
+  }
+}
+/* ===== CENTER IMAGE ===== */
+[data-testid="stImage"] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-testid="stImage"] > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-testid="stImage"] img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
